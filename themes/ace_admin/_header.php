@@ -4,7 +4,7 @@
 			<a href="#" class="brand">
 				<small>
 					<i class="icon-leaf"></i>
-					DrTooth Dental Clinic
+					http://www.imechanics.co.th/
 				</small>
 			</a><!--/.brand-->
 

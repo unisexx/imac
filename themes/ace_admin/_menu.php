@@ -40,11 +40,25 @@
 		<span class="menu-text"> ไฮไลท์ </span>
 	</a>
 </li>
+
+<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'เกี่ยวกับเรา'?'class="active"':'';?>>
+	<a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=เกี่ยวกับเรา">
+		<i class="fa fa-building-o"></i>
+		<span class="menu-text"> เกี่ยวกับเรา </span>
+	</a>
+</li>
+
+<li <?=@$this->uri->segment(1) == 'informations'?'class="active"':'';?>>
+	<a href="informations/admin/informations">
+		<i class="fa fa-newspaper-o"></i>
+		<span class="menu-text"> ข่าวสาร </span>
+	</a>
+</li>
 		
 
-<li <?=@$_GET['module'] == 'เกี่ยวกับเรา'?'class="active open"':'';?> <?=@$this->uri->segment(1) == 'tools'?'class="active open"':'';?>>
+<!-- <li <?=@$_GET['module'] == 'เกี่ยวกับเรา'?'class="active open"':'';?> <?=@$this->uri->segment(1) == 'tools'?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
-		<i class="fa fa-hospital-o"></i>
+		<i class="fa fa-building-o"></i>
 		<span class="menu-text"> เกี่ยวกับเรา </span>
 
 		<b class="arrow icon-angle-down"></b>
@@ -73,7 +87,6 @@
 		</li>
 		
 		<li <?=@$_GET['module'] == 'เกี่ยวกับเรา' && @$_GET['category'] == 'เครื่องมือของเรา'?'class="active open"':'';?> <?=@$this->uri->segment(1) == 'tools'?'class="active open"':'';?>>
-			<!-- <a href="contents/admin/contents/form?module=เกี่ยวกับเรา&category=เครื่องมือของเรา"> -->
 				<a href="#" class="dropdown-toggle">
 				<i class="icon-double-angle-right"></i>
 				เครื่องมือของเรา
@@ -99,10 +112,10 @@
 			
 		</li>
 	</ul>
-</li>
+</li> -->
 
 
-<li <?=@$_GET['module'] == 'บริการทางทันตกรรม' || @$this->uri->segment(1) == 'services'?'class="active open"':'';?>>
+<!-- <li <?=@$_GET['module'] == 'บริการทางทันตกรรม' || @$this->uri->segment(1) == 'services'?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
 		<i class="fa fa-medkit"></i>
 		<span class="menu-text"> บริการทางทันตกรรม </span>
@@ -153,10 +166,10 @@
 			</a>
 		</li>
 	</ul>
-</li>
+</li> -->
 
 
-<li <?=@$this->uri->segment(1) == 'staffs' || @$this->uri->segment(1) == 'talks' || @$this->uri->segment(1) == 'dentists' ?'class="active open"':'';?>>
+<!-- <li <?=@$this->uri->segment(1) == 'staffs' || @$this->uri->segment(1) == 'talks' || @$this->uri->segment(1) == 'dentists' ?'class="active open"':'';?>>
 	<a href="#" class="dropdown-toggle">
 		<i class="fa fa-user-md"></i>
 		<span class="menu-text"> คุยกับหมอฟัน </span>
@@ -186,15 +199,15 @@
 			</a>
 		</li>
 	</ul>
-</li>
+</li> -->
 
 
-<li <?=@$this->uri->segment(1) == 'patients'?'class="active"':'';?>>
+<!-- <li <?=@$this->uri->segment(1) == 'patients'?'class="active"':'';?>>
 	<a href="patients/admin/patients">
 		<i class="fa fa-wheelchair"></i>
 		<span class="menu-text"> คนไข้ของเรา </span>
 	</a>
-</li>
+</li> -->
 
 
 <li <?=@$this->uri->segment(1) == 'galleries'?'class="active"':'';?>>
